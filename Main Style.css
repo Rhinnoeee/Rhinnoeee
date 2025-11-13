@@ -1,0 +1,71 @@
+/* --- Base --- */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Poppins',sans-serif;
+  background-color:#faf9f5;
+  color:#2d3a2d;
+  scroll-behavior:smooth;
+  line-height:1.6;
+}
+a{text-decoration:none;color:inherit;}
+img{max-width:100%;border-radius:10px;}
+
+/* --- Header / Navigation --- */
+.hero-header{
+  background:linear-gradient(rgba(36,46,36,.6),rgba(36,46,36,.5)),
+             url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=60') center/cover;
+  color:#fff;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+nav{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:20px 40px;
+}
+.logo{font-weight:600;font-size:1.6em;}
+.logo span{color:#9cc69b;}
+nav ul{display:flex;gap:25px;list-style:none;}
+nav a{color:#fff;font-weight:500;transition:.3s;}
+nav a:hover{color:#9cc69b;}
+.hero{text-align:center;margin:auto;max-width:700px;padding-bottom:60px;}
+.hero h2{font-size:2.8em;margin-bottom:20px;}
+.btn{
+  background:#9cc69b;color:#2d3a2d;padding:12px 28px;border-radius:30px;
+  font-weight:600;transition:.3s;
+}
+.btn:hover{background:#84b38b;transform:translateY(-2px);}
+
+/* --- Intro & Sections --- */
+.intro{padding:60px 20px;text-align:center;max-width:800px;margin:auto;}
+.progress-bar{background:#e5ece3;height:20px;border-radius:10px;overflow:hidden;}
+#progress-fill{background:#688e66;width:0;height:100%;transition:.5s;}
+#progress-text{margin-top:10px;color:#2d3a2d;}
+
+/* --- Content Pages --- */
+.content{padding:60px 10%;text-align:center;}
+.content h2{color:#355e3b;margin-bottom:20px;}
+.quiz,.comment-section{
+  background:#f0f4ef;padding:30px;border-radius:10px;margin:30px auto;max-width:700px;text-align:left;
+  box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+.quiz button,.comment-section button{
+  background:#688e66;color:white;border:none;padding:10px 20px;border-radius:6px;cursor:pointer;margin-top:10px;
+}
+.quiz button:hover,.comment-section button:hover{background:#557e55;}
+.comment-section input,.comment-section textarea{
+  width:100%;padding:10px;margin:8px 0;border:1px solid #cdd5cb;border-radius:6px;font-family:inherit;
+}
+.comment{border-bottom:1px solid #cdd5cb;padding:10px 0;}
+.like-btn{background:none;border:none;color:#c64a3b;font-size:1.8em;cursor:pointer;margin:10px 0;}
+.like-btn.liked{color:#ff8b7b;}
+
+/* --- Footer --- */
+footer{background:#2d3a2d;color:#fff;text-align:center;padding:20px;margin-top:40px;font-size:.9em;}
+
+/* --- Responsive --- */
+@media(max-width:800px){
+  nav ul{display:none;}
+  .hero h2{font-size:2em;}
+}

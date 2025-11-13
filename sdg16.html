@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SDG 16 | Peace, Justice & Strong Institutions</title>
+  <link rel="stylesheet" href="Main Style.css">
+</head>
+<body>
+  <nav>
+    <h1 class="logo">SDG<span>12–16</span></h1>
+    <ul>
+      <li><a href="Main content.html">Home</a></li>
+      <li><a href="sdg15.html">← Prev</a></li>
+    </ul>
+  </nav>
+
+  <section class="content">
+    <h2>SDG 16: Peace, Justice & Strong Institutions</h2>
+    <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&w=900&q=60" alt="Peace and justice">
+    <p>Peace and justice are the foundations of sustainable development. Commit to fairness, equality, and kindness in your community.</p>
+
+    <button class="like-btn" id="like16">❤️</button>
+    <p id="likeCount16">0 people support this goal</p>
+
+    <div class="quiz">
+      <h3>🕊 Peace Pledge</h3>
+      <input type="text" id="pledgeName" placeholder="Your name">
+      <button onclick="makePeacePledge()">Sign the Peace Pledge</button>
+      <p id="peaceMessage"></p>
+    </div>
+
+    <div class="comment-section">
+      <h3>💬 Share Your Peace Ideas</h3>
+      <input id="name" type="text" placeholder="Your name">
+      <textarea id="message" rows="3" placeholder="Share your thoughts..."></textarea>
+      <button onclick="addComment('sdg16')">Post Comment</button>
+      <div id="comments"></div>
+    </div>
+
+    <a href="Main Content.html" class="btn">← Back Home</a>
+  </section>
+
+  <footer><p>© 2025 SDG 16 | Peace & Justice</p></footer>
+  <script src="Main Interaction.js"></script>
+</body>
+</html>

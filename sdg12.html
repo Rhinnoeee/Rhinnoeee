@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SDG 12 | Responsible Consumption & Production</title>
+  <link rel="stylesheet" href="Main Style.css">
+</head>
+<body>
+  <nav>
+    <h1 class="logo">SDG<span>12–16</span></h1>
+    <ul>
+      <li><a href="Main Content.html">Home</a></li>
+      <li><a href="sdg13.html">Next Goal →</a></li>
+    </ul>
+  </nav>
+
+  <section class="content">
+    <h2>SDG 12: Responsible Consumption & Production</h2>
+    <img src="https://images.unsplash.com/photo-1591284202621-4b04aa9b9c69?auto=format&fit=crop&w=900&q=60" alt="Sustainable products">
+    <p>Encourage sustainable consumption patterns and responsible production to reduce waste and preserve natural resources.</p>
+
+    <button class="like-btn" id="like12">❤️</button>
+    <p id="likeCount12">0 people support this goal</p>
+
+    <div class="quiz">
+      <h3>🌱 Quick Quiz</h3>
+      <h4>Which action best supports SDG 12?</h4>
+      <button onclick="quizAnswer('a', this)">A) Buying single-use plastics</button><br>
+      <button onclick="quizAnswer('b', this)">B) Composting and reusing items</button><br>
+      <button onclick="quizAnswer('c', this)">C) Ignoring recycling</button>
+      <p id="result"></p>
+    </div>
+
+    <div class="comment-section">
+      <h3>💬 Share Your Tips</h3>
+      <input id="name" type="text" placeholder="Your name">
+      <textarea id="message" rows="3" placeholder="Share advice or your eco-friendly tip..."></textarea>
+      <button onclick="addComment('sdg12')">Post Comment</button>
+      <div id="comments"></div>
+    </div>
+
+    <a href="Main Content.html" class="btn">← Back Home</a>
+  </section>
+
+  <footer><p>© 2025 SDG 12 | Responsible Consumption</p></footer>
+  <script src="Main Interaction.js"></script>
+</body>
+</html>

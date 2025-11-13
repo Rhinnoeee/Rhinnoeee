@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SDG 14 | Life Below Water</title>
+  <link rel="stylesheet" href="Main Style.css">
+</head>
+<body>
+  <nav>
+    <h1 class="logo">SDG<span>12–16</span></h1>
+    <ul>
+      <li><a href="Main Content.html">Home</a></li>
+      <li><a href="sdg13.html">← Prev</a></li>
+      <li><a href="sdg15.html">Next →</a></li>
+    </ul>
+  </nav>
+
+  <section class="content">
+    <h2>SDG 14: Life Below Water</h2>
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=60" alt="Life below water">
+    <p>Protecting our oceans and marine life is essential to maintaining a healthy planet. Avoid plastic, support sustainable fishing, and participate in cleanups.</p>
+
+    <button class="like-btn" id="like14">❤️</button>
+    <p id="likeCount14">0 people support this goal</p>
+
+    <div class="quiz">
+      <h3>🌊 Ocean Cleanup Pledge</h3>
+      <p>Select the actions you’ll take:</p>
+      <label><input type="checkbox" class="pledge" value="noPlastic"> I’ll avoid single-use plastics</label><br>
+      <label><input type="checkbox" class="pledge" value="beachCleanup"> I’ll join a local cleanup</label><br>
+      <label><input type="checkbox" class="pledge" value="educate"> I’ll educate others about ocean pollution</label><br>
+      <button onclick="savePledge('sdg14')">Save My Pledge</button>
+      <p id="pledgeResult"></p>
+    </div>
+
+    <div class="comment-section">
+      <h3>💬 Share Your Ocean Advice</h3>
+      <input id="name" type="text" placeholder="Your name">
+      <textarea id="message" rows="3" placeholder="Share your experience..."></textarea>
+      <button onclick="addComment('sdg14')">Post Comment</button>
+      <div id="comments"></div>
+    </div>
+
+    <a href="Main Content.html" class="btn">← Back Home</a>
+  </section>
+
+  <footer><p>© 2025 SDG 14 | Life Below Water</p></footer>
+  <script src="Main Interaction.js"></script>
+</body>
+</html>

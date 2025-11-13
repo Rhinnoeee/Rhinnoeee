@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SDG 13 | Climate Action</title>
+  <link rel="stylesheet" href="Main Style.css">
+</head>
+<body>
+  <nav>
+    <h1 class="logo">SDG<span>12–16</span></h1>
+    <ul>
+      <li><a href="Main Content.html">Home</a></li>
+      <li><a href="sdg12.html">← Prev</a></li>
+      <li><a href="sdg14.html">Next →</a></li>
+    </ul>
+  </nav>
+
+  <section class="content">
+    <h2>SDG 13: Climate Action</h2>
+    <img src="https://images.unsplash.com/photo-1612831455543-43a4c94bc05c?auto=format&fit=crop&w=900&q=60" alt="Climate action">
+    <p>Climate change is a global challenge affecting everyone. Take action by reducing your carbon footprint, supporting renewable energy, and spreading awareness.</p>
+
+    <button class="like-btn" id="like13">❤️</button>
+    <p id="likeCount13">0 people support this goal</p>
+
+    <div class="quiz">
+      <h3>🌍 Carbon Footprint Mini-Tracker</h3>
+      <p>Estimate your impact by selecting your weekly habits:</p>
+      <label><input type="checkbox" id="drive"> I drive a car daily</label><br>
+      <label><input type="checkbox" id="meat"> I eat meat most days</label><br>
+      <label><input type="checkbox" id="recycle"> I recycle regularly</label><br>
+      <label><input type="checkbox" id="public"> I use public transport often</label><br>
+      <button onclick="calcFootprint()">Calculate My Footprint</button>
+      <p id="footprintResult"></p>
+    </div>
+
+    <div class="comment-section">
+      <h3>💬 Share Your Climate Tips</h3>
+      <input id="name" type="text" placeholder="Your name">
+      <textarea id="message" rows="3" placeholder="Share your advice..."></textarea>
+      <button onclick="addComment('sdg13')">Post Comment</button>
+      <div id="comments"></div>
+    </div>
+
+    <a href="Main Content.html" class="btn">← Back Home</a>
+  </section>
+
+  <footer><p>© 2025 SDG 13 | Climate Action</p></footer>
+  <script src="Main Interaction.js"></script>
+</body>
+</html>
